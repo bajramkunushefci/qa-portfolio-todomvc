@@ -92,3 +92,79 @@ Steps:
 
 Expected Result:
 All todos are displayed regardless of status
+
+## TC-09: Add whitespace-only todo
+
+Steps:
+1. Enter " "
+2. Press Enter
+
+Expected: Ignored OR trimmed and not added
+
+## TC-10: Add single-character todo
+
+Steps:
+1. Enter “A”
+2. Press Enter
+
+Expected: Todo created
+
+## TC-11: Add very long todo (500+ chars)
+
+Steps:
+1. Type a long string (500–1000 chars)
+2. Press Enter
+
+Expected:
+Todo is created successfully
+No UI break
+
+## TC-12: Add special characters
+
+Steps:
+1. Enter "@#$%^&*()_+{}|"
+2. Press Enter
+
+Expected: Rendered correctly
+
+## TC-13: Add emoji/unicode todo
+
+Steps:
+1. Enter “🔥 Test 测试 مرحبا”
+2. Press Enter
+
+Expected: Stored and rendered correctly
+
+## TC-14: Edit existing todo
+
+Steps:
+1. Double-click an existing todo
+2. Modify text
+3. Press Enter
+
+Expected: Updated text saved
+
+## TC-15: Cancel edit using Escape
+
+Steps:
+1. Double-click todo
+2. Modify text
+3. Press Escape
+
+Expected: Original text restored
+
+## TC-16: Click outside during edit (blur save/cancel)
+
+Steps:
+1. Edit todo
+2. Click outside input
+
+Expected: Behavior consistent (save or cancel, defined by app)
+
+## TC-17: Reload page after adding todos
+
+Expected: Todos persist
+
+## TC-18: Edit then reload
+
+Expected: Edited data persists

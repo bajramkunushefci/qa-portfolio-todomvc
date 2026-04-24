@@ -12,6 +12,7 @@ This project demonstrates my QA skills by testing the TodoMVC React application.
 ## Contents
 - Test Plan
 - Test Cases
+- Test Execution
 - Bug Reports
 
 ## Tools Used
