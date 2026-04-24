@@ -78,3 +78,25 @@ Previously entered data should be restored from storage
 Additional reproduction paths:
 Create todos → refresh → data lost
 Edit todo → refresh → data lost
+
+## BUG-004 — Delete button overlaps todo text for long todo items
+
+Title: Delete button overlaps todo text causing readability issue (UI overlap problem)
+
+Severity: Low
+
+Priority: Low
+
+Steps to reproduce:
+Open TodoMVC app  
+Add a todo with a long text (e.g. a full sentence or paragraph)  
+Hover over the todo item  
+Observe the layout of the delete ("x") button and text  
+
+Actual result:
+Delete button overlaps the todo text when hovering  
+Some parts of the text become harder to read due to overlap  
+
+Expected result:
+Delete button should be positioned clearly without overlapping the todo text  
+Both text and button should remain clearly visible  
